@@ -1,0 +1,81 @@
+name: Build and deploy academic website
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+    inputs:
+      sync_publications:
+        description: Refresh publications from Google Scholar (requires SERPAPI_KEY)
+        type: boolean
+        default: true
+  schedule:
+    # Mondays at 08:17 UTC; schedules may be delayed by GitHub.
+    - cron: '17 8 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academic-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Only the repository's default branch is allowed to deploy.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Synchronize Google Scholar publications
+        id: sync
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.sync_publications)
+        continue-on-error: true
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python scripts/sync_scholar.py
+      - name: Report sync failure
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo '::warning::Scholar sync failed. Building from the last saved publication cache.'
+          echo 'Scholar sync failed; the existing cache was retained. Check the provider account and workflow log.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Build static HTML
+        run: python scripts/build.py
+      - name: Save successful publication updates
+        if: steps.sync.outcome == 'success'
+        run: |
+          git add data/scholar_cache.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update publication metadata'
+            git push
+          fi
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

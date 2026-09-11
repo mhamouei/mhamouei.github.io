@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="$description">
+  <meta name="author" content="$name">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>$title</title>
+  <link rel="canonical" href="$canonical">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="$title">
+  <meta property="og:description" content="$description">
+  <meta property="og:url" content="$canonical">
+  <meta name="theme-color" content="#a32638">
+  <link rel="stylesheet" href="${prefix}assets/style.css">
+  <script src="${prefix}assets/site.js" defer></script>
+  $metadata
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="${prefix}index.html" aria-label="$name — home">$short_name<span class="wordmark-dot" aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">$navigation</nav>
+    </div>
+  </header>
+  <main class="container" id="main">$body</main>
+  <footer class="site-footer container">
+    <p>© $year $name</p>
+    <a href="mailto:$email">Get in touch <span aria-hidden="true">↗</span></a>
+  </footer>
+  <div id="copy-status" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

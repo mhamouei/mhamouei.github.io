@@ -1,0 +1,69 @@
+{
+  "name": "Mohammadhossein Amouei",
+  "short_name": "M. Amouei",
+  "role": "PhD Candidate",
+  "department": "School of Information Studies",
+  "university": "McGill University",
+  "university_url": "https://www.mcgill.ca/",
+  "lab": "Data Mining and Security Lab",
+  "lab_url": "https://dmas.lab.mcgill.ca/",
+  "email": "mohammadhossein.amouei@mail.mcgill.ca",
+  "site_url": "https://mhamouei.github.io",
+  "scholar_id": "1GTi1MMAAAAJ",
+  "github_url": "https://github.com/mhamouei",
+  "cv": "",
+  "portrait": "",
+  "tagline": "Software security · Machine learning",
+  "intro": "I study how machine learning can help us understand and secure software when source code is unavailable.",
+  "bio": [
+    "I am a PhD candidate at McGill University, supervised by Prof. Benjamin C. M. Fung. My research brings together software reverse engineering, natural language processing, and representation learning.",
+    "I focus on binary code similarity: identifying related functions across compilers, optimization settings, and architectures. My broader interests include language models for code and learning-guided vulnerability discovery."
+  ],
+  "research": [
+    {
+      "title": "Binary code similarity",
+      "text": "Representations that capture function semantics despite changes introduced by compilation and optimization.",
+      "tags": "Binary analysis · Reverse engineering"
+    },
+    {
+      "title": "Language models for code",
+      "text": "Adapting language models to assembly and source code for retrieval, representation learning, and program understanding.",
+      "tags": "Representation learning · NLP"
+    },
+    {
+      "title": "Learning-guided security",
+      "text": "Machine learning methods for vulnerability discovery and adaptive testing of software defenses.",
+      "tags": "Vulnerability discovery · Fuzzing"
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Information Studies",
+      "institution": "McGill University",
+      "dates": "2022–present"
+    },
+    {
+      "degree": "MSc in Computer Science",
+      "institution": "Shahrood University of Technology",
+      "dates": "2018–2021"
+    },
+    {
+      "degree": "BSc in Information Technology",
+      "institution": "Shahrood University of Technology",
+      "dates": "2014–2018"
+    }
+  ],
+  "teaching": [
+    {
+      "title": "Programming for Information Professionals",
+      "detail": "INFS 691 · Instructor · McGill University"
+    },
+    {
+      "title": "Foundations of Programming",
+      "detail": "COMP 202 · Teaching assistant · McGill University"
+    }
+  ],
+  "contact_text": "For research collaborations or questions about my work, please contact me by email.",
+  "show_citation_counts": false,
+  "featured_limit": 4
+}

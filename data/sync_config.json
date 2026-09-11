@@ -1,0 +1,6 @@
+{
+  "page_size": 100,
+  "max_pages": 10,
+  "max_detail_requests": 40,
+  "fetch_details": true
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "id": "lena-2026",
+      "match": {
+        "titles": [
+          "LENA: Llama-based Embeddings of Neutralized Assembly for Cross-compiler/optimization Binary Code Similarity Detection"
+        ],
+        "dois": [
+          "10.1109/TSE.2026.3705321"
+        ],
+        "scholar_ids": []
+      },
+      "featured": true,
+      "summary": "Llama-based representations for matching binary functions across compilers and optimization levels.",
+      "preprint": "",
+      "preprint_label": "Preprint PDF",
+      "code": "https://github.com/McGill-DMaS/LENA",
+      "venue_short": "IEEE TSE"
+    },
+    {
+      "id": "fin-2026",
+      "match": {
+        "titles": [
+          "FIN: Boosting Binary Code Embedding by Normalizing Function Inlinings"
+        ],
+        "dois": [
+          "10.1016/j.jss.2025.112603"
+        ],
+        "scholar_ids": []
+      },
+      "featured": true,
+      "summary": "Improving binary code embeddings by addressing the structural effects of function inlining.",
+      "preprint": "",
+      "preprint_label": "Preprint PDF",
+      "code": "https://github.com/McGill-DMaS/FIN",
+      "venue_short": "JSS"
+    },
+    {
+      "id": "asmdocgen-2024",
+      "match": {
+        "titles": [
+          "AsmDocGen: Generating Functional Natural Language Descriptions for Assembly Code"
+        ],
+        "dois": [
+          "10.5220/0012761400003753"
+        ],
+        "scholar_ids": []
+      },
+      "featured": true,
+      "summary": "Generating natural-language descriptions of assembly functions with pretrained language models.",
+      "preprint": "",
+      "preprint_label": "Preprint PDF",
+      "venue_short": "ICSOFT"
+    },
+    {
+      "id": "rat-2022",
+      "match": {
+        "titles": [
+          "RAT: Reinforcement-Learning-Driven and Adaptive Testing for Vulnerability Discovery in Web Application Firewalls"
+        ],
+        "dois": [
+          "10.1109/TDSC.2021.3095417"
+        ],
+        "scholar_ids": []
+      },
+      "featured": true,
+      "summary": "Reinforcement learning and adaptive search for testing web application firewalls.",
+      "preprint": "https://arxiv.org/pdf/2312.07885",
+      "preprint_label": "Author version PDF",
+      "venue_short": "IEEE TDSC"
+    }
+  ]
+}

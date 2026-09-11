@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "profile_id": "1GTi1MMAAAAJ",
+  "source": "curated_seed_not_a_scholar_sync",
+  "last_successful_sync": null,
+  "records": [
+    {
+      "id": "lena-2026",
+      "title": "LENA: Llama-based Embeddings of Neutralized Assembly for Cross-compiler/optimization Binary Code Similarity Detection",
+      "authors": [
+        "Mohammadhossein Amouei",
+        "Benjamin C. M. Fung",
+        "Philippe Charland",
+        "Jun Meng"
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Software Engineering",
+      "type": "journal",
+      "pages": "1--24",
+      "doi": "10.1109/TSE.2026.3705321",
+      "source_url": "https://github.com/McGill-DMaS/LENA"
+    },
+    {
+      "id": "fin-2026",
+      "title": "FIN: Boosting Binary Code Embedding by Normalizing Function Inlinings",
+      "authors": [
+        "Mohammadhossein Amouei",
+        "Benjamin C. M. Fung",
+        "Philippe Charland"
+      ],
+      "year": 2026,
+      "venue": "Journal of Systems and Software",
+      "type": "journal",
+      "volume": "231",
+      "pages": "112603",
+      "doi": "10.1016/j.jss.2025.112603",
+      "source_url": "https://github.com/McGill-DMaS/FIN"
+    },
+    {
+      "id": "asmdocgen-2024",
+      "title": "AsmDocGen: Generating Functional Natural Language Descriptions for Assembly Code",
+      "authors": [
+        "Jesia Yuki",
+        "Mohammadhossein Amouei",
+        "Benjamin C. M. Fung",
+        "Philippe Charland",
+        "Andrew Walenstein"
+      ],
+      "year": 2024,
+      "venue": "International Conference on Software Technologies (ICSOFT)",
+      "type": "conference",
+      "pages": "35--45",
+      "doi": "10.5220/0012761400003753",
+      "source_url": "https://www.scitepress.org/PublishedPapers/2024/127614/"
+    },
+    {
+      "id": "rat-2022",
+      "title": "RAT: Reinforcement-Learning-Driven and Adaptive Testing for Vulnerability Discovery in Web Application Firewalls",
+      "authors": [
+        "Mohammadhossein Amouei",
+        "Mohsen Rezvani",
+        "Mansoor Fateh"
+      ],
+      "year": 2022,
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "type": "journal",
+      "volume": "19",
+      "number": "5",
+      "doi": "10.1109/TDSC.2021.3095417",
+      "source_url": "https://arxiv.org/abs/2312.07885"
+    }
+  ]
+}
