@@ -57,7 +57,7 @@ nav a:hover { text-decoration: underline; }
 .section { padding: 45px 0 49px; border-top: 1px solid var(--line); }
 .section-top { display: flex; justify-content: space-between; gap: 20px; align-items: center; margin-bottom: 30px; }
 .section-top > a { font-size: 14px; text-decoration: none; font-weight: 600; }
-.research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+.research-grid {   display: grid;   grid-template-columns: repeat(2, minmax(0, 1fr));   gap: 34px; }
 .research-item { min-width: 0; }
 .research-item .number { font: 12px var(--sans); color: var(--accent); display: block; margin-bottom: 15px; }
 .research-item h3 { font-size: 17px; margin-bottom: 10px; }
