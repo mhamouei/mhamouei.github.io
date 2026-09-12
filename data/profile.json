@@ -19,21 +19,26 @@
     "I am a PhD candidate at McGill University, supervised by Prof. Benjamin C. M. Fung. My research brings together software reverse engineering, natural language processing, and representation learning.",
     "I focus on binary code similarity: identifying related functions across compilers, optimization settings, and architectures. My broader interests include language models for code and learning-guided vulnerability discovery."
   ],
-  "research": [
+    "research": [
     {
-      "title": "Binary code similarity",
-      "text": "Representations that capture function semantics despite changes introduced by compilation and optimization.",
-      "tags": "Binary analysis · Reverse engineering"
+      "title": "AI for Cybersecurity",
+      "text": "Developing machine learning and language-model-based methods to understand software behavior and support security analysis.",
+      "tags": "Machine learning · Language models · Software security"
     },
     {
-      "title": "Language models for code",
-      "text": "Adapting language models to assembly and source code for retrieval, representation learning, and program understanding.",
-      "tags": "Representation learning · NLP"
+      "title": "Program Analysis and Reverse Engineering",
+      "text": "Analyzing source code and binaries to recover program semantics and identify related code across compilers, optimization settings, and architectures.",
+      "tags": "Binary analysis · Program understanding · Code similarity"
     },
     {
-      "title": "Learning-guided security",
-      "text": "Machine learning methods for vulnerability discovery and adaptive testing of software defenses.",
-      "tags": "Vulnerability discovery · Fuzzing"
+      "title": "Automated Vulnerability Detection",
+      "text": "Detecting vulnerabilities in source code and binaries through program analysis, learned representations, and code similarity.",
+      "tags": "Vulnerability discovery · Vulnerability matching"
+    },
+    {
+      "title": "Software Supply Chain Security",
+      "text": "Investigating code provenance, third-party dependencies, and the propagation of known vulnerabilities across reused software components.",
+      "tags": "Code provenance · Dependency analysis · Software reuse"
     }
   ],
   "education": [
