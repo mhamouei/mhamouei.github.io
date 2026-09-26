@@ -1,4 +1,26 @@
 {
   "schema_version": 1,
-  "records": []
+  "records": [{
+      "id": "gear-2026",
+      "title": "GEAR: Generator-Adaptive State Space Models for Associative Recall",
+      "authors": [
+        "J. Meng",
+        "M. Amouei",
+        "Z. Lin",
+        "X. Hu",
+        "B. C. M. Fung"
+      ],
+      "year": 2026,
+      "venue": "Proceedings of the 40th Annual Conference on Neural Information Processing Systems",
+      "venue_short": "NeurIPS",
+      "type": "conference",
+      "status": "Accepted · Main track full paper · Poster",
+      "featured": true,
+      "summary": "Sydney, Australia, December 2026. 25 pages. Acceptance rate: 25.7% (7,900/30,709).",
+      "preprint": "",
+      "preprint_label": "Accepted manuscript PDF",
+      "code": "",
+      "slides": "",
+      "project": ""
+    }]
 }
